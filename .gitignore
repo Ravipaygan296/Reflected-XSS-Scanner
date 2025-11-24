@@ -22,11 +22,15 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
 # Reports
 *.html
+!docs/*.html
 xss_report*.html
 report*.html
+reports/*.html
+!reports/.gitkeep
 
 # IDE
 .vscode/
@@ -34,13 +38,29 @@ report*.html
 *.swp
 *.swo
 *~
-
-# OS
 .DS_Store
-Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
 
 # Logs
 *.log
 
-# Test outputs
-test_results/
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+env/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
